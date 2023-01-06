@@ -1,0 +1,85 @@
+.app-hero {
+
+    h1 {
+        direction: rtl;
+        font-size: rem(36px);
+        font-family: almoni-900;
+        .pink {
+            color: $clrSecondary;
+        }
+        margin-block-end: 100px;
+    }
+    
+    p {
+        direction: rtl;
+        font-size: rem(18px);
+        cursor: pointer;
+
+        svg {
+            transition: 0.4s;
+        }
+
+        &:hover {
+            svg {
+
+                transform: translateX(-30px);
+            }
+        }
+    }
+
+    
+    .bg-img-section {
+        z-index: -1;
+        height: 1000px;
+        overflow: hidden;
+        position: relative;
+        img {
+            
+            &.img1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                animation: img1Animation 10s linear infinite;
+            }
+            &.img2 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                animation: img2Animation 10s linear infinite;
+            }
+            &.img3 {
+                position: absolute;
+                top: 20%;
+                right: 50%;
+                animation: img3Animation 10s linear infinite;
+            }
+            &.img4 {
+                position: absolute;
+                bottom: 50%;
+                left: 0;
+                animation: img4Animation 10s linear infinite;
+            }
+            &.img5 {
+                position: absolute;
+                bottom: 30%;
+                left: 30%;
+                animation: img5Animation 10s linear infinite;
+            }
+            &.img6 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                animation: img6Animation 10s linear infinite;
+            }
+        }
+
+    }
+
+    @include animation-mixin(img1Animation, 0px, 10px);
+    @include animation-mixin(img2Animation, 10px, 20px);
+    @include animation-mixin(img3Animation, -10px, -20px);
+    @include animation-mixin(img4Animation, -10px, 0px);
+    @include animation-mixin(img5Animation, 5px, 0px);
+    @include animation-mixin(img6Animation, 16px, -16px);
+
+}

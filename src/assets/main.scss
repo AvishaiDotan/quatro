@@ -1,0 +1,24 @@
+// Setup
+@import 'setup/reset';
+@import 'setup/variables';
+@import 'setup/functions';
+@import 'setup/mixins';
+@import 'setup/typography';
+@import 'setup/layout';
+@import 'setup/helpers';
+// @import 'setup/animate.scss';
+
+
+// Basics
+@import 'basics/body.scss';
+
+
+// CMPS
+@import 'cmps/app-header';
+@import 'cmps/app-hero';
+@import 'cmps/testimony-grid';
+@import 'cmps/testimony-preview';
+// @import 'cmps/app-demo';
+// @import 'cmps/app-feedbacks';
+
+// Components

@@ -1,0 +1,16 @@
+.testimony-preview {
+    position: relative;
+    .idx {
+        position: absolute;
+        top: 25%;
+        transform: translateX(50%);
+        font-size: 250px;
+        height: min-content;
+    }
+
+    .testimony-content {
+        position: absolute;
+        top: 50%;
+        right: 70px;
+    }
+}

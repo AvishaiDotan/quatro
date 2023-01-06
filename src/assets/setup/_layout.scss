@@ -1,0 +1,27 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: 25px 1fr 25px;
+
+    >*{
+        grid-column: 2;
+    }
+
+    .full {
+        grid-column: 1 / -1;
+    }
+
+    @include for-tablet-layout {
+        grid-template-columns: 1fr 880px 1fr;
+    }
+
+    @include for-desktop-layout {
+        grid-template-columns: 1fr 1250px 1fr;
+    }
+
+
+
+    // @include for-example-layout {
+    //     grid-template-columns: 1fr example-px 1fr;
+    // }
+}
+

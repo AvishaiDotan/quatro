@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(./src/assets/fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(./src/assets/fonts/Raleway-Regular.ttf)
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(./src/assets/fonts/OpenSans-Bold.ttf)
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(./src/assets/fonts/OpenSans-Regular.ttf)
+}
+
+
+//almoni
+@font-face {
+    font-family: almoni-300;
+    src: url(./../../../src/assets/fonts/Almoni-Neue/almoni-neue-aaa-300.woff)
+}
+@font-face {
+    font-family: almoni-400;
+    src: url(./../../../src/assets/fonts/Almoni-Neue/almoni-neue-aaa-400.woff)
+}
+@font-face {
+    font-family: almoni-900;
+    src: url(./../../../src/assets/fonts/Almoni-Neue/almoni-neue-aaa-900.woff)
+}
+
+
+// Bootsrap Icons
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css');

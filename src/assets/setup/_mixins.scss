@@ -1,0 +1,77 @@
+/* Breakpoint mixins */
+@mixin for-mobile-layout {
+
+    //$mobile-breakpoint: 420px;
+    @media (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-tablet-layout {
+
+    //$tablet-breakpoint: 920px;
+    @media (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-desktop-layout {
+
+    //$desktop-breakpoint: 1300px;
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin animation-mixin($name, $min, $max) {
+    @keyframes #{$name} {
+        0% {
+            transform: translate($min, $min);
+        }
+        25% {
+            transform: translate($min, $max);
+        }
+
+        50% {
+            transform: translate($max, $max);
+        }
+
+        75% {
+            transform: translate($min, $max);
+        }
+
+        100% {
+            transform: translate($min, $min);
+        }
+    }
+}
+
+
+
+
+
+// @include for-example-layout {
+//   @media (min-width: $example-breakpoint) { @content; }
+// }
+
+
+//Flexbox Mixin:
+@mixin flexbox-center-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexbox-center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexbox-between-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

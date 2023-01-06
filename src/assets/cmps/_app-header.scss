@@ -1,0 +1,45 @@
+.main-header {
+    padding-block: 20px;
+
+    @include for-tablet-layout {
+        padding-block: 40px;
+    }
+
+    // @include for-desktop-layout {
+    //     padding-inline: 80px;
+    //     padding-block: 40px;
+    //     margin-inline-end: 160px;
+    // }
+
+    ul > li {
+        font-size: rem(26px);
+        font-family: almoni-400;
+        transition: 0.4s;
+        cursor: pointer;
+
+        &:hover {
+            color: $clrSecondary;
+
+        }
+    }
+
+    ul {
+        animation: showHide 2s ;
+        overflow: hidden;
+    }
+
+    .logo svg {
+        color: $clr1;
+    }
+
+
+
+    @keyframes showHide {
+        0% {width:0%; opacity: 0;}
+        100% {width:100%; opacity: 1;}
+    }
+    
+
+
+
+}
