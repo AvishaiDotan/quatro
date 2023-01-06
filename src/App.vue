@@ -16,7 +16,7 @@ import AppHero from './components/app-hero.vue';
     
     components: {
       appHeader,
-      twoPartResponsive,
+      // twoPartResponsive,
       testimonyGrid,
       AppHero,
     }

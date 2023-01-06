@@ -6,7 +6,7 @@
             <p>{{ testimony.details }}</p>
         </div>
         <div class="idx">
-            {{idx}}
+            {{(idx + 1) >= 4 ? idx : idx + 1}}
         </div>
     </article>
     <article v-else>

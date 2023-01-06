@@ -6,11 +6,28 @@
         transform: translateX(50%);
         font-size: 250px;
         height: min-content;
+        font-family: almoni-700;
     }
 
     .testimony-content {
         position: absolute;
         top: 50%;
         right: 70px;
+        font-family: almoni-300;
+        h2 {
+            font-size: 60px;
+        }
+
+    }
+
+    
+    img {
+        // filter:grayscale(1);
+        cursor: pointer;
+        filter: none;
+        &:hover {
+            // filter:grayscale(0);
+            filter: sepia(100%) brightness(69%) hue-rotate(315deg) saturate(317%);
+        }
     }
 }

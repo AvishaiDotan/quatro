@@ -1,6 +1,29 @@
 .testimony-grid {
+    transform: translateY(-350px);
     direction: rtl;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    grid-template-columns: repeat(2, max-content);
+    
+    row-gap: 0px;
+    column-gap: 70px;
+
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    
+    li:nth-of-type(2) {
+        transform: translateY(25%);
+        z-index: 1;
+    }
+    li:nth-of-type(3) {
+        transform: translate(-50%, 10%);
+        z-index: 1;
+    }
+    li:nth-of-type(5) {
+        z-index: 0;
+        transform: translateY(25%);
+    }
+    li:nth-of-type(6) {
+        transform: translateY(-35%);
+    }
 }

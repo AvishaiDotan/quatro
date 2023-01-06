@@ -39,25 +39,25 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                animation: img1Animation 10s linear infinite;
+                animation: img1Animation 8s linear infinite;
             }
             &.img2 {
                 position: absolute;
                 top: 0;
                 right: 0;
-                animation: img2Animation 10s linear infinite;
+                animation: img2Animation 5s linear infinite;
             }
             &.img3 {
                 position: absolute;
                 top: 20%;
                 right: 50%;
-                animation: img3Animation 10s linear infinite;
+                animation: img3Animation 7s linear infinite;
             }
             &.img4 {
                 position: absolute;
                 bottom: 50%;
                 left: 0;
-                animation: img4Animation 10s linear infinite;
+                animation: img4Animation 4s linear infinite;
             }
             &.img5 {
                 position: absolute;
@@ -69,7 +69,7 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                animation: img6Animation 10s linear infinite;
+                animation: img6Animation 7s linear infinite;
             }
         }
 
