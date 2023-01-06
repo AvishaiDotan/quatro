@@ -1,29 +1,67 @@
-.testimony-grid {
-    transform: translateY(-350px);
-    direction: rtl;
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    
-    row-gap: 0px;
-    column-gap: 70px;
 
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
+.testimonies-section {
+    transform: translateY(-350px);
+    position: relative;
+
+    .testimony-header {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        color: $clrSecondary;
+        font-family:  almoni-700;
+        font-size: 30px;
+
+        .underline {
+            position: relative;
+            bottom: -15px;
+            background-color: $clrSecondary;
+            font-family:  almoni-700;
+            font-size: 30px;
+            width: 100%;
+            height: 3px;
+            z-index: 1;
+        
+        }
+    }
+    .testimony-grid {
+        
+        direction: rtl;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        
+        row-gap: 0px;
+        column-gap: 70px;
     
-    li:nth-of-type(2) {
-        transform: translateY(25%);
-        z-index: 1;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        
+        li:nth-of-type(2) {
+            transform: translateY(25%);
+            z-index: 1;
+        }
+        li:nth-of-type(3) {
+            transform: translate(-50%, 10%);
+            z-index: 1;
+        }
+        li:nth-of-type(5) {
+            z-index: 0;
+            transform: translateY(25%);
+        }
+        li:nth-of-type(6) {
+            transform: translateY(-35%);
+        }
     }
-    li:nth-of-type(3) {
-        transform: translate(-50%, 10%);
-        z-index: 1;
-    }
-    li:nth-of-type(5) {
-        z-index: 0;
-        transform: translateY(25%);
-    }
-    li:nth-of-type(6) {
-        transform: translateY(-35%);
+
+    .more-action {
+        padding-inline-start: 50px;
+        cursor: pointer;
+        svg {
+            transition: 0.4s;
+            padding-inline: 10px;
+        }
+        &:hover svg {
+            transform: translateX(-40px);
+        }
     }
 }

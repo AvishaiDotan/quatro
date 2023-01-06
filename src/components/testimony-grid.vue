@@ -1,9 +1,19 @@
 <template >
-    <ul class="testimony-grid">
-        <li v-for="(testimony, idx) in testimonies">
-            <testimonyPreview :testimony="testimony" :idx="idx"/>
-        </li>
-    </ul>
+    <section class="testimonies-section">
+        <header class="testimony-header">
+            פרוייקטים נבחרים
+            <div class="underline"></div>
+        </header>
+        <ul class="testimony-grid">
+            <li v-for="(testimony, idx) in testimonies">
+                <testimonyPreview :testimony="testimony" :idx="idx" />
+            </li>
+        </ul>
+        <p class="m-b-s-80 more-action">
+            <svg width="62" height="10" xmlns="http://www.w3.org/2000/svg"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="buttons/arrow/reg" transform="translate(-14 -7)" fill="#FFF" fill-rule="nonzero"><g id="button/arrow/reg" transform="translate(15)"><g id="Stacked-Group"><path id="Line-15" d="M8.5 11.5h52v1h-52v4l-9-4.5 9-4.5v4z"/></g></g></g></g></svg>
+            <span>עוד פרוייקטים</span>
+        </p>
+    </section>
 </template>
 
 <script>
@@ -68,4 +78,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 </style>
